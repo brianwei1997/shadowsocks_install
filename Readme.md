@@ -16,7 +16,7 @@ shadowsocksR.sh
 - 使用root用户登录，运行以下命令：
 
 ```
-wget --no-check-certificate https://raw.githubusercontent.com/teddysunbackup/shadowsocks_install/master/shadowsocksR.sh
+wget --no-check-certificate https://raw.githubusercontent.com/zjl88858/shadowsocks_install/master/shadowsocksR.sh
 chmod +x shadowsocksR.sh
 ./shadowsocksR.sh 2>&1 | tee shadowsocksR.log
 ```
