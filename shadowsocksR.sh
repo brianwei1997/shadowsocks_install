@@ -21,8 +21,8 @@ echo
 
 libsodium_file="libsodium-1.0.17"
 libsodium_url="https://github.com/jedisct1/libsodium/releases/download/1.0.17/libsodium-1.0.17.tar.gz"
-shadowsocks_r_file="shadowsocksr-3.2.2"
-shadowsocks_r_url="https://github.com/shadowsocksrr/shadowsocksr/archive/3.2.2.tar.gz"
+shadowsocks_r_file="shadowsocksr-dev"
+shadowsocks_r_url="https://github.com/shadowsocksrr/shadowsocksr/archive/akkariiin/dev.zip"
 
 #Current folder
 cur_dir=`pwd`
@@ -32,9 +32,6 @@ none
 aes-256-cfb
 aes-192-cfb
 aes-128-cfb
-aes-256-cfb8
-aes-192-cfb8
-aes-128-cfb8
 aes-256-ctr
 aes-192-ctr
 aes-128-ctr
@@ -43,7 +40,9 @@ chacha20
 salsa20
 xchacha20
 xsalsa20
+rc4
 rc4-md5
+rc4-md5-6
 )
 # Reference URL:
 # https://github.com/shadowsocksr-rm/shadowsocks-rss/blob/master/ssr.md
@@ -53,7 +52,6 @@ protocols=(
 origin
 verify_deflate
 auth_sha1_v4
-auth_sha1_v4_compatible
 auth_aes128_md5
 auth_aes128_sha1
 auth_chain_a
@@ -62,18 +60,17 @@ auth_chain_c
 auth_chain_d
 auth_chain_e
 auth_chain_f
+auth_akarin_rand
+auth_akarin_spec_a
 )
 # obfs
 obfs=(
 plain
 http_simple
-http_simple_compatible
 http_post
-http_post_compatible
+random_head
 tls1.2_ticket_auth
-tls1.2_ticket_auth_compatible
 tls1.2_ticket_fastauth
-tls1.2_ticket_fastauth_compatible
 )
 # Color
 red='\033[0;31m'
