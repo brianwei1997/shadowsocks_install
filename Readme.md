@@ -33,6 +33,8 @@ Your Encryption Method:your_encryption_method
 Welcome to visit:https://shadowsocks.be/9.html
 Enjoy it!
 ```
+
+```
 启动：/etc/init.d/shadowsocks start
 停止：/etc/init.d/shadowsocks stop
 重启：/etc/init.d/shadowsocks restart
@@ -40,6 +42,8 @@ Enjoy it!
 配置文件路径：/etc/shadowsocks.json
 日志文件路径：/var/log/shadowsocks.log
 代码安装目录：/usr/local/shadowsocks
+```
+
+Remastered (C) 2019 Turmi
 
 Copyright (C) 2014-2019 Teddysun
-Remastered (C) 2019 Turmi
